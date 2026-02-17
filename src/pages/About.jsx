@@ -23,7 +23,7 @@ export default function About() {
             </p>
             <p>
               I care about clarity, speed, and impact. I don’t overcomplicate.
-              I don’t wait for permission. I experiment, I learn fast, and I
+              I don’t wait for permission. I experiment, learn fast, and
               iterate even faster.
             </p>
             <p>
@@ -33,7 +33,7 @@ export default function About() {
             </p>
             <p>
               I don’t have all the answers. I do have a relentless drive to
-              build, explore, and refine. That’s what defines my work, and what
+              build, explore, and refine. That’s what defines my work — and what
               drives me every day.
             </p>
           </div>

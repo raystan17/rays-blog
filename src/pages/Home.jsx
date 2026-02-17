@@ -34,14 +34,14 @@ export default function Home() {
             This blog is where I document the process — product launches, flashes of insight, experiments, failures, and wins.
           </p>
 
-          <p className={styles.manifestoSub}>Beneath the tactics, there's something deeper.</p>
+          <p className={styles.manifestoSub}>Beneath the tactics is something deeper.</p>
 
           <h2 className={styles.manifestoStatement}>
             I build from the center of what is yet unseen.
           </h2>
 
           <p className={styles.manifestoInfluences}>
-            Drawn to the edge where imagination collides with leverage, where intuition meets execution, where identity shapes reality.
+            I&apos;m drawn to the edge where imagination collides with leverage, where intuition meets execution, and where identity shapes reality.
           </p>
 
           <div className={styles.manifestoReframes}>
