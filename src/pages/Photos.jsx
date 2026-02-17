@@ -12,8 +12,7 @@ export default function Photos() {
         <header className={styles.header}>
           <h1 className={styles.title}>Photos</h1>
           <p className={styles.subtitle}>
-            A minimal gallery inspired by Alan Watts and Neville Goddard:
-            stillness, imagination, and presence.
+            Stillness, perspective, and presence — images that reflect the inner landscape this work comes from.
           </p>
         </header>
         <div className={styles.grid}>

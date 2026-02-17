@@ -9,7 +9,7 @@ export default function Blog() {
         <header className={styles.header}>
           <h1 className={styles.title}>Blog</h1>
           <p className={styles.subtitle}>
-            Essays on building, design systems, and thinking in the open.
+            Essays on startups, self-concept, marketing as philosophy, and what happens when assumption meets action.
           </p>
         </header>
         <div className={styles.grid}>

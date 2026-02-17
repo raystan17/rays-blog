@@ -8,7 +8,6 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault()
     setSubmitting(true)
-    // Simulate form submit; replace with real endpoint
     setTimeout(() => {
       setSubmitting(false)
       setSent(true)
@@ -19,33 +18,32 @@ export default function Contact() {
     <div className={styles.page}>
       <div className="container">
         <header className={styles.header}>
-          <h1 className={styles.title}>Contact</h1>
+          <h1 className={styles.title}>Get in touch</h1>
           <p className={styles.subtitle}>
-            Have a project in mind or just want to say hi? Send a message and I’ll get back to you.
+            Building something ambitious? Have a question about something I wrote? Or just want to say what's up? I'd like to hear from you.
           </p>
         </header>
         <div className={styles.layout}>
           <div className={styles.info}>
-            <h2 className={styles.infoTitle}>Other ways to reach me</h2>
+            <h2 className={styles.infoTitle}>Other ways to connect</h2>
             <ul className={styles.infoList}>
               <li>
                 <span className={styles.label}>Email</span>
-                <a href="mailto:hello@example.com">hello@example.com</a>
+                <a href="mailto:ray@example.com">ray@example.com</a>
               </li>
               <li>
                 <span className={styles.label}>Twitter / X</span>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">@ray</a>
-              </li>
-              <li>
-                <span className={styles.label}>LinkedIn</span>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">linkedin.com/in/ray</a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">@ray</a>
               </li>
             </ul>
+            <p className={styles.infoNote}>
+              I read everything. If your message resonates, I'll reply — usually within a couple days.
+            </p>
           </div>
           <div className={styles.formWrap}>
             {sent ? (
               <div className={styles.success}>
-                <p>Thanks for your message. I’ll reply as soon as I can.</p>
+                <p>Message received. I'll get back to you soon.</p>
               </div>
             ) : (
               <form className={styles.form} onSubmit={handleSubmit}>

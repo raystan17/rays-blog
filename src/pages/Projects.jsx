@@ -9,7 +9,7 @@ export default function Projects() {
         <header className={styles.header}>
           <h1 className={styles.title}>Projects</h1>
           <p className={styles.subtitle}>
-            Selected work—products, design systems, and tools built for clarity and performance.
+            Products launched, experiments run, and lessons learned — each one an expression of belief in action.
           </p>
         </header>
         <div className={styles.grid}>

@@ -47,19 +47,38 @@
 }
 
 .imageWrap {
+  position: relative;
   aspect-ratio: 16/10;
   overflow: hidden;
+  background: #0f0f12;
+}
+
+.imageWrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 50% 20%, rgba(124, 156, 255, 0.12), transparent 52%),
+    linear-gradient(180deg, rgba(13, 13, 15, 0.06), rgba(13, 13, 15, 0.22));
+  mix-blend-mode: screen;
+  opacity: 0.85;
+  animation: auraPulse 8s ease-in-out infinite;
 }
 
 .image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  filter: saturate(1.03) contrast(1.02);
+  transform: scale(1.02);
+  transition: transform 0.45s ease, filter 0.45s ease;
+  animation: mysticFloat 11s ease-in-out infinite;
 }
 
 .card:hover .image {
-  transform: scale(1.03);
+  transform: scale(1.06);
+  filter: saturate(1.07) contrast(1.05);
 }
 
 .content {
@@ -93,4 +112,21 @@
 
 .card:hover .readMore {
   color: var(--link-hover);
+}
+
+@keyframes mysticFloat {
+  0%, 100% { transform: scale(1.02) translateY(0); }
+  50% { transform: scale(1.04) translateY(-4px); }
+}
+
+@keyframes auraPulse {
+  0%, 100% { opacity: 0.72; }
+  50% { opacity: 0.95; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .image,
+  .imageWrap::after {
+    animation: none;
+  }
 }

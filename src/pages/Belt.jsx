@@ -8,7 +8,7 @@ export default function Belt() {
         <header className={styles.header}>
           <h1 className={styles.title}>Belt</h1>
           <p className={styles.subtitle}>
-            A structured progression—principles and practices that compound over time.
+            A progression from awareness to integration — the inner operating system behind everything I build.
           </p>
         </header>
         <div className={styles.progression}>

@@ -65,6 +65,14 @@
   color: var(--link-hover);
 }
 
+.infoNote {
+  margin-top: calc(var(--space-unit) * 3);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
 .formWrap {
   max-width: 480px;
 }
